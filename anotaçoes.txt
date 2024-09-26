@@ -1,0 +1,27 @@
+#1- Para criar um ambiente virtualizado
+  python -m venv .venv
+
+#2 - As vezes o Windows não estará ativado a execução de Scripts, por isso terá:
+  - Abrir o PowerShell como ADM
+  - executar o comando : "Set-ExecutionPolicy Unrestricted" 
+  - digitar A = Sim, para todos
+
+#3 - para ativar o ambiente virtualizado:
+  .\.venv\Scripts\activate
+
+#4- Depois importar o Pandas
+  pip install pandas
+
+#5- Depois o Plotly
+  pip install plotly
+
+#6 - Depois o streamlit
+  pip install streamlit
+
+#7-para startar o stremlit:
+streamlit run .\app.py
+
+#8- CTRL + C pausa a aplicação
+
+#9- preparar para deploy
+  pip list > requirements.txt
